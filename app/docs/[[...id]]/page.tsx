@@ -10,7 +10,7 @@ type DocsParams = {
 const DocsPage = ({ params, searchParams }: DocsParams) => {
   return (
     <div>
-      Docs: {params.id.join(', ')}
+      Docs: {params?.id?.join(', ')}
       <br />
       <div>{searchParams.thing}</div>
     </div>
