@@ -1,3 +1,5 @@
+import styles from './style.module.css'
+
 type DocsParams = {
   params: {
     id: string[]
@@ -9,7 +11,7 @@ type DocsParams = {
 
 const DocsPage = ({ params, searchParams }: DocsParams) => {
   return (
-    <div>
+    <div className={styles.title}>
       Docs: {params?.id?.join(', ')}
       <br />
       <div>{searchParams.thing}</div>
